@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Melina Rentzi Resume | CV">
+    <meta name="keywords" content="Melina Rentzi, Melina, Rentzi, CV, Resume">
+    <meta name="author" content="Melina Rentzi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Melina Rentzi</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="brand">
+            melina<span class="sensei">rentzi</span>
+        </div>
+        <ul class="topnav" id="navbar-toggle">
+            <li>
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li>
+                <!--  The user needs to be logged in to Scribd for the link to redirect to the pdf page for download  -->
+                <a class="nav-link" href="https://www.scribd.com/document/387541716/Melina-Rentzi-CV" target="_blank"><i class="fas fa-cloud-download-alt" title="Download CV in PDF"></i></a>
+            </li>
+            <li class="dropdownLink">
+                <a onclick="toggleDropdown(event)" href="">&#9776;</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="headshot-wrapper" id="home">
+            <figure>
+                <img class="headshot" src="assets/self.png" alt="Melina">
+                <figcaption>I am Melina Rentzi, a 26 year old PhD candidate who has a strong passion and interest for Web Development and Project Management.</figcaption>
+            </figure>
+        </div>
+    </header>
+
+    <section class="services" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="header">Education</h1>
+            </div>
+            <div class="media-object">
+                <div class="icon-left">
+                    <img class="icon" src="assets/mortarboard.svg" alt="Mortarboard">
+                </div>
+                <div class="blurb-wrapper-right">
+                    <h3 class="blurb-header">
+                        <p>Sep 2017 - today</p>
+                        <p>PhD Candidate at University of Patras</p>
+                    </h3>
+                    <div class="blurb-info">
+                        My academic research is on Multiobjective Facility Location Problems, and more specifically on the location of emergency services. I have created a new model for the location of emergency fire stations, and I'm working on modeling it using Multiobjective Mathematical Programming. Then, I will solve it with a new and robust Genetic Algorithm that will be similar to NSGA-II. The plan is to do a case study for my country, Greece.
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="icon-right">
+                    <img class="icon" src="assets/bookshelf.svg" alt="Bookself">
+                </div>
+                <div class="blurb-wrapper-left">
+                    <h3 class="blurb-header">
+                        <p>Sep 2015 - Feb 2017</p>
+                        <p>Master in Business Administration (MBA) at University of Patras</p>
+                    </h3>
+                    <div class="blurb-info">
+                        I acquired my Master's degree with a grade of 8.64/10, and my major was in International Entrepreneurship. I took lessons in Marketing, Management, Leadership, Databases and CRM systems, as well as Economics, Logistics, Human Resource Management, Statistics and Operations Research. My field of research was Facility Location Management, and for my thesis I created a Genetic Algorithm on MATLAB to solve the simple set covering problem.
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="icon-left">
+                    <img class="icon" src="assets/blackboard.svg" alt="Mathematics">
+                </div>
+                <div class="blurb-wrapper-right">
+                    <h3 class="blurb-header">
+                        <p>Sep 2010 - Dec 2014</p>
+                        <p>Bachelor of Mathematics at University of Patras</p>
+                    </h3>
+                    <div class="blurb-info">
+                        I acquired my Bachelor's degree with a grade of 7/10, and my major was in Statistics, Probabilities and Operations Research. My thesis was on Integer Mathematical Programming.
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="quote-btn-wrapper">
+                <button class="quote-btn">
+                    Get a quote!
+                </button>
+            </div>
+-->
+        </div>
+    </section>
+
+
+    <section class="services-2" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="header">Experience</h1>
+            </div>
+            <div class="media-object">
+                <div class="icon-left">
+                    <img class="icon" src="assets/web-design.svg" alt="Web Design Picture">
+                </div>
+                <div class="blurb-wrapper-right">
+                    <h3 class="blurb-header">
+                        <p>June 2017 - today</p>
+                        <p>Web Developer</p>
+                    </h3>
+                    <div class="blurb-info">
+                        As a self-taught web developer, I have more than 400 hours of hands on training in web technologies like html, css, javascript, jquery, node etc, and I have built various projects. Also, I have created a web app that's live on Heroku, and a Selenium Automated Testing Framework on Python 3. To find out more about my work, check the contact links at the bottom of this page.
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="icon-right">
+                    <img class="icon" src="assets/pobuca.png" alt="Pobuca" style="min-width: 30%;">
+                </div>
+                <div class="blurb-wrapper-left">
+                    <h3 class="blurb-header">
+                        <p>Dec 2016 - Apr 2017</p>
+                        <p>Quality Assurance Tester at Pobuca</p>
+                    </h3>
+                    <div class="blurb-info">
+                        I joined Pobuca as an intern for the position of the Quality Assurance Engineer. During my internship, I was trained at manual software testing of their web and mobile app, as well as their Outlook Addon. I was part of the RnD team, that has adopted the Agile Methodologies and Scrum. I was using Selenium IDE and Selenium WebDriver to run automated tests, and I was also responsible for the updates of the release documentation and the user manuals.
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="icon-left">
+                    <img class="icon" src="assets/folder.svg" alt="Secretary Support">
+                </div>
+                <div class="blurb-wrapper-right">
+                    <h3 class="blurb-header">
+                        <p>May 2014</p>
+                        <p>Conference Secretary Support</p>
+                    </h3>
+                    <div class="blurb-info">
+                        I volunteered as a secretary for two conferences that were organized at the University of Patras. The first volunteer work was for the Career Advisory Office, and the second one was for the Innovation and Entrepreneurship Unit of the university. During the conferences, my responsibilities were to prepare the conference room, set up the microphones and the banners, prepare the buffet, organize the brochures to be distributed to the participants, organization and classification of the registration forms, as well as prepare the entries and the certificates for the participants.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio services" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="header">Skills</h1>
+            </div>
+            <div class="portfolio-wrapper">
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">HTML5</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 100%;"></p>
+                    <span class="skill-bar-percent">100%</span>
+                </div>
+
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">CSS3</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 99%;;"></p>
+                    <span class="skill-bar-percent">99%</span>
+                </div>
+
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">JavaScript</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 70%;"></p>
+                    <span class="skill-bar-percent">70%</span>
+                </div>
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">jQuery</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 65%;"></p>
+                    <span class="skill-bar-percent">65%</span>
+                </div>
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">Bootstrap 4</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 80%;"></p>
+                    <span class="skill-bar-percent">80%</span>
+                </div>
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">NodeJS</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 65%;"></p>
+                    <span class="skill-bar-percent">65%</span>
+                </div>
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">ExpressJS</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 55%;;"></p>
+                    <span class="skill-bar-percent">55%</span>
+                </div>
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">MongoDB</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 55%;;"></p>
+                    <span class="skill-bar-percent">55%</span>
+                </div>
+                <div class="skillbar" data-percent="98">
+                    <span class="skillbar-title" style="background: #883344;">Python 3</span>
+                    <p class="skillbar-bar" style="background: #883344 none repeat scroll 0% 0%; width: 80%;;"></p>
+                    <span class="skill-bar-percent">80%</span>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-container-2">
+        <div class="container">
+            <div class="section-header" id="contact">
+                <h1>Contact</h1>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/melina-rentzi/" target="_blank" title="Melina on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MelinaRentzi" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+                <a href="https://codepen.io/MelinaRentzi/#" target="_blank" title="Melina on Codepen"><i class="fab fa-codepen"></i></a>
+                <a href="https://melinarentzi.wixsite.com/portfolio" target="_blank" title="Portfolio Page"><i class="fab fa-wix"></i></a>
+                <a href="mailto:r.melina_92@hotmail.com" title="Email Melina"><i class="fas fa-at"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div>Created by Melina Rentzi - 2018</div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/skill.bars.jquery.js"></script>
+
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $('.skillbar').skillBars({
+            from: 0,
+            speed: 4000,
+            interval: 100
+        });
+    </script>
+
+</body>
+
+</html>

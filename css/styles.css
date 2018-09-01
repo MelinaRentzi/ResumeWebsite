@@ -1,0 +1,342 @@
+:root {
+    --beige: #f8f5f2;
+    --bone: #ddccbb;
+    --solidpink: #883344;
+    --woodbark: #221100;
+    --sadle: #443322;
+    --lightpink: #cc9988;
+    --lightpinktrans: #cc998838;
+}
+
+
+html,
+body {
+    font-family: 'Merienda', cursive;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 1rem;
+    color: var(--woodbark);
+    margin: 0;
+}
+
+.navbar,
+.container {
+    max-width: 99%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    background-color: var(--beige);
+}
+
+.brand {
+    font-size: 25px;
+}
+
+.brand,
+.nav-link,
+a {
+    text-transform: uppercase;
+    color: var(--woodbark);
+}
+
+.sensei {
+    color: var(--solidpink);
+}
+
+.topnav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topnav .nav-link,
+a {
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.fa-cloud-download-alt {
+    color: var(--solidpink);
+}
+
+.dropdownLink {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headshot {
+    max-width: 150px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.headshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+figcaption {
+    padding: 10px;
+    width: 400px;
+    font-size: 18px;
+    font-family: ;
+}
+
+.services,
+.contact-container {
+    background-color: var(--beige);
+    padding: 4rem 1rem;
+}
+
+.media-object {
+    display: flex;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.icon-left,
+.icon-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.icon {
+    width: 180px;
+}
+
+.blurb-wrapper-right,
+.blurb-wrapper-left {
+    flex: 1;
+}
+
+.blurb-header {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.blurb-info {
+    color: var(--sadle);
+    font-size: 18px;
+}
+
+.icon-left,
+.blurb-wrapper-left {
+    order: 1;
+}
+
+.icon-right,
+.blurb-wrapper-right {
+    order: 2;
+}
+
+
+.section-header {
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    ul.topnav li a.nav-link {
+        display: none;
+    }
+
+    ul.topnav li.dropdownLink {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        text-decoration: none;
+    }
+
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    ul.topnav.responsive li {
+        position: relative;
+        top: 30px;
+        right: 30px;
+    }
+
+    ul.topnav.responsive li a.nav-link {
+        display: block;
+        line-height: 2;
+    }
+
+    .media-object {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon-right,
+    .icon-left {
+        order: 1;
+    }
+
+    .blurb-wrapper-left,
+    .blurb-wrapper-right {
+        order: 2;
+        padding-top: 2rem;
+    }
+
+    .container .social {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 545px) {
+    .portfolio-wrapper {
+        justify-content: center;
+    }
+}
+
+/* SOCIAL FONT AWESOME */
+
+.social {
+    display: flex;
+    padding-left: 27rem;
+}
+
+.fab {
+    width: 100px;
+    height: 50px;
+    justify-content: space-around;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.fab:hover {
+    cursor: pointer;
+}
+
+.fa-linkedin {
+    flex: 2;
+    color: #0077B5;
+}
+
+.fa-github {
+    flex: 2;
+    color: #24292e;
+}
+
+.fa-codepen {
+    flex: 2;
+}
+
+.fa-wix {
+    flex: 2;
+    color: #a0138e;
+}
+
+.fa-at {
+    width: 100px;
+    height: 50px;
+    justify-content: space-around;
+    font-size: 50px;
+    margin: 50px;
+    flex: 2;
+    color: var(--solidpink);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    max-height: 20px;
+    background: var(--beige);
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* SKILLS BAR */
+
+/* https://github.com/umarwebdeveloper/jquery-css-skills-bar */
+
+.skillbar {
+    position: relative;
+    /*    display: inline-block;*/
+    margin: 15px 0;
+    width: 100%;
+    background: var(--lightpinktrans);
+    height: 35px;
+    border-radius: 3px;
+    width: 50%;
+    transition: .2s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillbar:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: var(--sadle);
+    font-weight: 800;
+}
