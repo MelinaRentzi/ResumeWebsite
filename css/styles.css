@@ -105,6 +105,10 @@ figcaption {
     padding: 4rem 1rem;
 }
 
+.services-2 {
+  padding: 4rem 1rem;
+}
+
 .media-object {
     display: flex;
     align-items: center;
@@ -226,8 +230,11 @@ figcaption {
 /* SOCIAL FONT AWESOME */
 
 .social {
+    width: 100%;
     display: flex;
-    padding-left: 27rem;
+    
+    align-items: center;
+    justify-content: center;
 }
 
 .fab {
